@@ -11,6 +11,7 @@ export const ProtectedPage = () => {
 
     const getMessage = async () => {
       const { data, error } = await getProtectedResource();
+      console.log(data);
 
       if (!isMounted) {
         return;
