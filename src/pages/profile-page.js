@@ -16,14 +16,17 @@ export const ProfilePage = () => {
       // headers: myHeaders,
       redirect: 'follow'
     };
+
+    console.log(user)
     
     fetch("https://dev-brian-codurance.eu.auth0.com/api/v2/users/" + user.sub + "/permissions", requestOptions)
       .then(response => response.json())
       .then(result => {
+        console.log(result)
         if (result[0].permission_name === "read:chickenprices") setCanViewChickenPrices(true);
       })
       .catch(error => console.log('error', error));
-  }, [])
+  }, [user])
 
   if (!user) {
     return null;
