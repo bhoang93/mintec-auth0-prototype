@@ -13,11 +13,11 @@ export const ProfilePage = () => {
     
     var requestOptions = {
       method: 'GET',
-      headers: myHeaders,
+      // headers: myHeaders,
       redirect: 'follow'
     };
     
-    fetch("https://dev-brian-codurance.eu.auth0.com/api/v2/users/google-oauth2%7C103558453299619115362/permissions", requestOptions)
+    fetch("https://dev-brian-codurance.eu.auth0.com/api/v2/users/" + user.sub + "/permissions", requestOptions)
       .then(response => response.json())
       .then(result => {
         if (result[0].permission_name === "read:chickenprices") setCanViewChickenPrices(true);
