@@ -7,9 +7,9 @@ export const ProfilePage = () => {
   const [canViewChickenPrices, setCanViewChickenPrices] = useState(false);
 
   useEffect(() => {
-    var myHeaders = new Headers();
-    myHeaders.append("Accept", "application/json");
-    myHeaders.append("Authorization", "Bearer 🔒");
+    // var myHeaders = new Headers();
+    // myHeaders.append("Accept", "application/json");
+    // myHeaders.append("Authorization", "Bearer 🔒");
     
     var requestOptions = {
       method: 'GET',
