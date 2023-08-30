@@ -16,7 +16,7 @@ export const LoginButton = () => {
   const LoginModal = () => {
     return(
       <div style={{ position: "absolute", top: 250, left: 750, zIndex: 999 }}>
-      <iframe src="https://https://dev-brian-codurance.eu.auth0.com//authorize?response_type=token&client_id=DH8mvZrs37rADw5hH0zUQ9qdbH4ilbHr&redirect_uri=https://mintec-auth0-prototype.vercel.app" title="login" />
+      <iframe src="https://dev-brian-codurance.eu.auth0.com//authorize?response_type=token&client_id=DH8mvZrs37rADw5hH0zUQ9qdbH4ilbHr&redirect_uri=https://mintec-auth0-prototype.vercel.app" title="login" />
       </div>
     )
   }
